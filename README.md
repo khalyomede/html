@@ -36,7 +36,7 @@ v install khalyomede.html
 In this example, we will encode HTML tags. This helps not to execute the rendered HTML, and prevent [XSS attacks](https://en.wikipedia.org/wiki/Cross-site_scripting).
 
 ```v
-import khalyomede.html.src.html
+import khalyomede.html
 
 fn main() {
   html_content := "<script>alert('malicious');</script>"
@@ -57,7 +57,7 @@ $ v run src/index.v
 In this example, we will decode HTML from its encoded counterpart. Note that if the encoded text has not been encoded using the library `html.encode()` function, the result might not be correct as this library only encodes a few set of HTML characters.
 
 ```v
-import khalyomede.html.src.html
+import khalyomede.html
 
 fn main() {
   encoded_content := "&#x3C;script&#x3E;alert(&#x27;malicious&#x27;)&#x3C;/script&#x3E"
