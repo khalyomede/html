@@ -2,6 +2,10 @@
 
 Functions to encode and decode HTML strings in V.
 
+## Disclaimer
+
+This package has been sunset, because built-in V lang functions for this purpose. See [html.escape](https://modules.vlang.io/encoding.html.html#escape) and [html.unescape](https://modules.vlang.io/encoding.html.html#unescape).
+
 ## Summary
 
 - [About](#about)
@@ -82,3 +86,4 @@ $ v run src/index.v
 ```v
 v run src/test
 ```
+
